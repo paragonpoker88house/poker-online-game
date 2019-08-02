@@ -1,0 +1,239 @@
+{
+  "settings": {
+    "name": "CARA BERMAIN POKER",
+    "currentPage": "cara-bermain-poker.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.10.6",
+    "siteFonts": [],
+    "uniqCompNum": 7,
+    "versionPublish": "4.10.6"
+  },
+  "pages": {
+    "cara-bermain-poker.html": {
+      "settings": {
+        "main": true,
+        "title": "CARA BERMAIN POKER",
+        "meta_descr": "Tutorial Cara bermain poker di  situs judi online terbaik dan terpercaya. memberikan layanan terbaik ",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-media span": {
+              "font-size": "48px",
+              "cursor": "pointer",
+              "background-color": "#ffffff",
+              "border-radius": "50%",
+              "width": "6rem",
+              "height": "6rem",
+              "line-height": "6rem",
+              "position": "relative",
+              "display": "inline-block",
+              "transition": "all 0.25s",
+              "color": "#353535",
+              "&.mbri-play:before": {
+                "position": "absolute",
+                "left": "50%",
+                "-webkit-transform": "translateX(-35%)",
+                "-moz-transform": "translateX(-35%)",
+                "-ms-transform": "translateX(-35%)",
+                "-o-transform": "translateX(-35%)",
+                "transform": "translateX(-35%)"
+              }
+            },
+            ".modalWindow": {
+              "position": "fixed",
+              "z-index": "5000",
+              "left": "0",
+              "top": "0",
+              "background-color": "rgba(61, 61, 61, 0.65)",
+              "width": "100%",
+              "height": "100%",
+              ".modalWindow-container": {
+                "display": "table-cell",
+                "vertical-align": "middle"
+              },
+              ".modalWindow-video": {
+                "height": "calc(80vw / 1.778)",
+                "width": "80vw",
+                "margin": "0 auto"
+              }
+            },
+            "a.close": {
+              "position": "absolute",
+              "right": "4vw",
+              "top": "4vh",
+              "color": "#ffffff",
+              "z-index": "5000000",
+              "font-size": "37px",
+              "background": "#000",
+              "padding": "20px",
+              "border-radius": "50%",
+              "&:hover": {
+                "color": "#ffffff"
+              }
+            }
+          },
+          "_name": "header8",
+          "_customHTML": "<section class=\"header8\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Video PopUp\" name=\"showVideoPopUp\" checked>\n        <input type=\"text\" title=\"Modal Video\" name=\"modalVideo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" condition=\"showVideoPopUp\">\n        <input type=\"checkbox\" title=\"Show Description\" name=\"showDescription\" checked condition=\"showVideoPopUp\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/tips-menguasai-permainan-poker-online-650x400.jpeg\" title=\"Background Image\" selected parallax>\n            <input type=\"color\" value=\"#7f1933\" title=\"Background Color\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ff3366\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center py-2 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        CARA BERMAIN POKER</h1>\n                <p class=\"mbr-text align-center py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">\n                        Situs judi online terpercaya paragonpoker88house.com</p>\n                <div class=\"mbr-media show-modal align-center py-2\" mbr-if=\"showVideoPopUp\" data-modal=\".modalWindow\">\n                         <a href=\"https://rebrand.ly/judi-cara-588bc\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-touch mobi-mbri\" style=\"color: rgb(247, 237, 74); fill: rgb(247, 237, 74);\"></span></a>\n                </div>\n                <div mbr-text class=\"icon-description align-center font-italic pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDescription && showVideoPopUp\" data-app-selector=\".icon-description\"></div>\n                <div class=\"mbr-section-btn text-center\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://rebrand.ly/judi-cara-588bc\" data-app-placeholder=\"Type Text\">DAFTAR</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showVideoPopUp\">\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rxXIdgL6VG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header8-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">Aturan Cara Bermain Poker di SItus Paragonpoker88house</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rxXKNAue7L",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content4-4"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background": "@bgColor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "image1",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">        \n        \n        <input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"92\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg && fullWidth==false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <a href=\"https://rebrand.ly/judi-cara-588bc\"><img src=\"@PROJECT_PATH@/assets/images/cara-bermain-poker-1200x618.jpg\" width=\"1400\" alt=\"cara bermain poker\" title=\"paragonpoker\"></a>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"container pb-5 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\">\n                    Create awesome websites!\n                </div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rxXLZqTFyK",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image1-6"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"3\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><span style=\"font-size: 1rem;\">Judi poker online Texas merupakan salah satu permainan kartu yang sudah tak asing lagi. Permainan ini menjadi salah satu game yang paling populer dimainkan di berbagai situs poker online, bahkan jika dibandingkan dengan jenis permainan deck card lainnya, poker Texas adalah salah satu game yang terpopuler.Sama halnya dengan permainan poker Indonesia online lainnya, Texas poker dimainkan dengan memanfaatkan kartu remi standar tanpa joker. Game terpopuler di situs poker online terpercaya ini bisa dimainkan mulai dari 2 hingga 10 orang pemain, kemudian nantinya permainan akan berlangsung paling sedikit dalam 4 ronde. </span><a href=\"https://rebrand.ly/judi-cara-588bc\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\">Adapun cara bermain poker dan aturannya sebenarnya sederhana saja</a><span style=\"font-size: 1rem;\">. Pemain yang sebelumnya sudah sering bermain game poker lain sudah pasti tak akan kesulitan untuk memahami aturan serta cara bermain poker yang diberikan, &nbsp;</span><br></p><p><span style=\"font-size: 1rem;\"></span></p><p>\n</p><p>Seperti yang disebutkan di atas, permainan yang diikuti oleh 2 hingga 10 orang pemain dalam 4 ronde ini harus menyusun kombinasi kartu, sedangkan pemain yang berhasil memperoleh kombinasi 5 kartu terbaik akan menjadi pemenang. Pemain ini akan mendapatkan semua uang atau chip yang terkumpul di dalam pot. Sebelum bermain melalui salah satu situs poker online terpercaya, ada baiknya untuk mengetahui aturan paling dasar dari permainan ini. Perlu Anda ketahui, poker hands yang berlaku pada poker Texas sedikit berbeda dari jenis poker lain, seperti baccarat. Jadi tak ada salahnya bila pertama kali memulai permainan ini untuk mengecek kombinasi kartu seperti apa yang memberikan keuntungan lebih besar.\n</p><p>\n</p><p>Adapun, setelah Anda selaku pemain telah mengetahui posisi dalam meja, maka langkah berikutnya adalah menentukan satu orang sebagai dealer. Di sini, dealer berperan untuk membagikan kartu, sekaligus sebagai titik penentu mulainya permainan. Hal penting lainnya, posisi dalam permainan judi poker online Texas ini akan menentukan kesuksesan Anda dalam permainan, karena pemain yang berada di sisi kanan dealer akan menjadi small blind sedangkan pemain setelahnya sebagai big blind.Permainan akan dimulai dari kedua pemain ini. Small blind dalam permainan ini menunjukan bahwa Anda memiliki nilai taruhan. Jadi misalnya, small blind memiliki nilai 10 chip dan big blind memiliki nilai 20 chip. Nantinya pemain akan mengeluarkan betting di dalam pot sesuai dengan posisi mereka sebagai small blind atau big blind.Bila sudah memahami mengenai dealer, kombinasi hands, posisi, small blind dan juga big blind selanjutnya tinggal aturan dan juga cara bermain poker main poker Texas yang bisa dilakukan melalui salah satu situs poker online, cara bermain poker.\n</p><p>\n</p><p><b>CARA BERMAIN POKER DAN ATURAN PADA SITUS <a href=\"https://rebrand.ly/poker-865bf\">PARAGONPOKER88HOUSE\n</a></b></p><p>&nbsp;\n</p><p><b>Ronde pertama / Pre Flop\n</b></p><p>Ronde pertama ini disebut dengan pre-flop. Pada ronde ini, pemain yang memulai langkah pertama merupakan yang duduk di sisi kiri big blind. Pemain bisa memilih untuk mengambil 3 langkah berbeda, yaitu fold, call atau raise. Di bawah ini merupakan penjelasan untuk masing-masing.\n</p><p>\n</p><p><b>Fold: </b>pemain membuang dua hole card (hands) yang mereka miliki dan tak lagi bertaruh di dalam pot\n</p><p><b>Call:</b> pemain tetap memiliki hands dengan cara bermain poker memanggil (calling) taruhan untuk big blind\n</p><p><b>Raise: </b>pemain meningkatkan taruhan dengan meletakan chip lebih banyak pada pot. Taruhan yang ditingkatkan minimal sama dengan nilai big blind.\n</p><p>\n</p><p><b>Ronde kedua / Flop\n</b></p><p>Setelah semua pemain mendapatkan giliran pada pre-flop, dealer akan memasuki babak kedua. Ronde kedua atau flop dimulai ketika dealer mengambil 3 kartu dari community card. Tiga kartu ini disebut dengan The Flop. Di permainan ini, flop akan dimulai dari pemain yang berada di kiri dealer. Ini berarti pemain small blind memulai putaran ronde lebih dulu. Sama seperti pada ronde pertama, pemain bisa memilih untuk melakukan fold, raise, atau call berdasarkan dari kartu The Flop dan hands yang mereka miliki, cara bermain poker.\n</p><p>\n</p><p><b>Ronde ketiga / Turn\n</b></p><p>Sama seperti pada ronde kedua, ronde ketiga dimulai ketika dealer mengambil satu kartu atau The Turn dari community card. Permainan masih dimulai dari pemain di sisi kiri dealer. Masih juga sama dengan ronde sebelumnya, pemain dapat melakukan fold bila kartu yang dimiliki tak menguntungkan, atau call dan juga raise. Pada ronde ini dan kedepannya, blind sudah disebut dengan bet.\n</p><p>\n</p><p><b>Ronde keempat / River\n</b></p><p>The River merupakan kartu terakhir yang diambil oleh dealer dari community card. Pemain bisa menggunakan kesempatan terakhir ini untuk melakukan fold, call, atau pun raise sekali lagi. Permainan juga masih dimulai dari sisi kiri dealer.\n</p><p>\n</p><p><b>Showdown\n</b></p><p>Setelah ronde keempat berakhir, saatnya untuk showdown. Pada saat showdown, pemain membuka dua hole card yang mereka miliki sebelumnya. Di sini pemain mulai bisa memperlihatkan kombinasi 5 kartu terbaik mereka. Pemain dengan kombinasi kartu terbaik menjadi pemenang dan bisa mendapatkan semua taruhan yang ada di dalam pot, <a href=\"https://rebrand.ly/judi-cara-588bc\">Manfaat cara bermain poker untuk pemain baru ataupun pemain lama di situs paragonpoker88house.\n</a></p><p>\n</p><p><b>Baca Juga : <a href=\"https://rebrand.ly/judi-cara-588bc\">Metode Untuk Bermain Poker Online Game di Paragonpoker88house</a></b></p><p><b><br></b></p><p><b><a href=\"https://rebrand.ly/judi-cara-588bc\">\n</a></b></p><p>Tonton Video :&nbsp;<a href=\"https://youtu.be/q3bcPvFGsN0\">Cara bermain poker untuk pemula</a></p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rxXIuOGYzA",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content1-3"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background": "@bgColor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".video-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "video1",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#b2ccd2\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://youtu.be/q3bcPvFGsN0?loop=0&autoplay=0\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rxXLScxZG3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "video1-5"
+        }
+      ]
+    }
+  }
+}
